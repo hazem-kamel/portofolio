@@ -1,0 +1,55 @@
+/* General Styling */
+.first-section {
+  margin: 20px;
+  padding: 30px;
+  display: flex;
+  height: 100%;
+}
+.intro-section {
+  padding: 10px;
+}
+.first-button {
+  padding: 25px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 28px;
+  background: #4b6cc1;
+  font-weight: 600;
+  color: #fff;
+}
+.image-section {
+  padding: 10px;
+  text-align: center;
+}
+.profile-image {
+  width: 300px;
+  height: 400px;
+}
+.links-section {
+  margin: 10px;
+}
+.links-section i {
+  margin: 10px;
+  font-size: 45px;
+  cursor: pointer;
+}
+/* Responsive Styling "min-width: 768px" */
+@media screen and (max-width: 768px) {
+  .first-section {
+    margin: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .image-links {
+    justify-content: center;
+  }
+  .intro-section {
+    text-align: center;
+  }
+  .image-section img {
+    width: 260px;
+    height: 260px;
+  }
+}

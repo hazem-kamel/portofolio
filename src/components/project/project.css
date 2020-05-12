@@ -1,0 +1,73 @@
+.project {
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.info {
+  padding: 30px;
+}
+.tech li {
+  display: inline-block;
+  padding: 8px 5px;
+  background-color: #313131;
+  color: #999;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color: #222;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.75em;
+  line-height: 1em;
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
+  margin: 3px;
+  opacity: 1;
+  min-width: 45px;
+  text-align: center;
+}
+.image-links {
+  padding: 30px;
+}
+.image-links img {
+  width: 600px;
+  height: 400px;
+  margin: 20px;
+}
+.links {
+  font-size: 20px;
+  position: relative;
+  text-align: center;
+}
+.links i {
+  color: aquamarine;
+  background-color: black;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px;
+}
+.links label {
+  font-size: 12px;
+  margin: 10px;
+}
+/* Responsive Styling "(min-width: 768px)" */
+@media screen and (max-width: 768px) {
+  .project {
+    flex-direction: column;
+  }
+  .image-links {
+    text-align: center;
+  }
+  .image-links img {
+    width: 220px;
+    height: 220px;
+    margin: auto;
+  }
+  .info {
+    text-align: center;
+    margin: auto;
+  }
+  .image-links i {
+    font-size: 12px;
+  }
+}

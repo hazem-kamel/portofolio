@@ -1,0 +1,61 @@
+.services {
+  padding: 30px;
+  margin: 20px;
+}
+.services h2 {
+  border-bottom: 4px solid #f6f6f6;
+}
+.services-section {
+  margin: 20px;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
+}
+.frontend {
+  text-align: center;
+  padding: 20px;
+  width: 350px;
+  margin: 5px;
+  border-radius: 6px;
+  border-top: 6px solid #4b6cc1;
+  background: #f6f6f6;
+}
+.backend {
+  text-align: center;
+  padding: 20px;
+  margin: 5px;
+  width: 350px;
+  border-radius: 6px;
+  border-top: 6px solid #4b6cc1;
+  background: #f6f6f6;
+}
+.skills {
+  text-align: center;
+}
+.skills-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 6px;
+  border-top: 6px solid #4b6cc1;
+  background: #f6f6f6;
+}
+
+.skills img {
+  width: 90px;
+  height: 90px;
+  margin: 20px;
+}
+/* Responsive Styling "(min-width: 768px)" */
+@media screen and (max-width: 768px) {
+  .services {
+    text-align: center;
+  }
+  .skills img {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+  }
+}

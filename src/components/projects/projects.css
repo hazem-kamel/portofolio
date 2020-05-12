@@ -1,0 +1,273 @@
+.projects-sections {
+  background-color: rgb(181, 176, 204);
+  padding: 30px;
+  margin: 30px;
+}
+.projects-cards {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 100%;
+  justify-content: center;
+}
+.projects-cards img {
+  width: 360px;
+  margin: 20px;
+  height: 200px;
+  cursor: pointer;
+}
+.projects-cards img:hover {
+  opacity: 0.4;
+  background-image: none;
+  background-color: rgb(252, 252, 252);
+}
+.projects-cards button:hover {
+  background-color: yellowgreen;
+}
+.projects-cards p {
+  color: rgb(16, 206, 165);
+}
+.project-1 {
+  position: relative;
+}
+.project-2 {
+  position: relative;
+}
+.project-3 {
+  position: relative;
+}
+.project-4 {
+  position: relative;
+}
+.project-5 {
+  position: relative;
+}
+.project-1 .Title {
+  position: absolute;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  height: 0%;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 60px;
+  text-align: center;
+  right: 0;
+  z-index: 51;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -webkit-transition: opacity 0.3s linear;
+}
+.project-1 .Learn {
+  height: 45px;
+  width: 90px;
+  position: absolute;
+  color: rgb(190, 17, 17);
+  margin: auto;
+  top: 30px;
+  left: 0;
+  bottom: 0px;
+  cursor: pointer;
+  text-align: center;
+  right: 0;
+  z-index: 51;
+  visibility: hidden;
+}
+.project-1:hover .Title {
+  opacity: 1;
+}
+.project-1:hover .Learn {
+  visibility: visible;
+  transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -webkit-transition: opacity 0.3s linear;
+}
+.project-2 .Title {
+  position: absolute;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  height: 0%;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 60px;
+  text-align: center;
+  right: 0;
+  z-index: 51;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -webkit-transition: opacity 0.3s linear;
+}
+.project-2:hover .Title {
+  opacity: 1;
+}
+.project-2 .Learn {
+  height: 45px;
+  width: 90px;
+  position: absolute;
+  color: rgb(190, 17, 17);
+  margin: auto;
+  top: 30px;
+  left: 0;
+  bottom: 0px;
+  cursor: pointer;
+  text-align: center;
+  right: 0;
+  z-index: 51;
+  visibility: hidden;
+}
+
+.project-2:hover .Learn {
+  visibility: visible;
+  transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -webkit-transition: opacity 0.3s linear;
+}
+
+.project-3 .Title {
+  position: absolute;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  height: 0%;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 60px;
+  text-align: center;
+  right: 0;
+  z-index: 51;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -webkit-transition: opacity 0.3s linear;
+}
+.project-3:hover .Title {
+  opacity: 1;
+}
+.project-3 .Learn {
+  height: 45px;
+  width: 90px;
+  position: absolute;
+  color: rgb(190, 17, 17);
+  margin: auto;
+  top: 30px;
+  left: 0;
+  bottom: 0px;
+  cursor: pointer;
+  text-align: center;
+  right: 0;
+  z-index: 51;
+  visibility: hidden;
+}
+
+.project-3:hover .Learn {
+  visibility: visible;
+  transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -webkit-transition: opacity 0.3s linear;
+}
+
+.project-4 .Title {
+  position: absolute;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  height: 0%;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 60px;
+  text-align: center;
+  right: 0;
+  z-index: 51;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -webkit-transition: opacity 0.3s linear;
+}
+.project-4:hover .Title {
+  opacity: 1;
+}
+.project-4 .Learn {
+  height: 45px;
+  width: 90px;
+  position: absolute;
+  color: rgb(190, 17, 17);
+  margin: auto;
+  top: 30px;
+  left: 0;
+  bottom: 0px;
+  cursor: pointer;
+  text-align: center;
+  right: 0;
+  z-index: 51;
+  visibility: hidden;
+}
+
+.project-4:hover .Learn {
+  visibility: visible;
+  transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -webkit-transition: opacity 0.3s linear;
+}
+
+.project-5 .Title {
+  position: absolute;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  height: 0%;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 60px;
+  text-align: center;
+  right: 0;
+  z-index: 51;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -webkit-transition: opacity 0.3s linear;
+}
+.project-5:hover .Title {
+  opacity: 1;
+}
+.project-5 .Learn {
+  height: 45px;
+  width: 90px;
+  position: absolute;
+  color: rgb(190, 17, 17);
+  margin: auto;
+  top: 30px;
+  left: 0;
+  bottom: 0px;
+  cursor: pointer;
+  text-align: center;
+  right: 0;
+  z-index: 51;
+  visibility: hidden;
+}
+
+.project-5:hover .Learn {
+  visibility: visible;
+  transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -webkit-transition: opacity 0.3s linear;
+}
+/* Responsive Styling "(min-width: 768px)" */
+@media screen and (max-width: 768px) {
+  .projects-cards img {
+    width: 180px;
+    height: 140px;
+    margin: 5px;
+  }
+  .projects-sections {
+    text-align: center;
+  }
+}
