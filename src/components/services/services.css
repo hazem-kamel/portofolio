@@ -1,9 +1,9 @@
 .services {
   padding: 30px;
-  margin: 20px;
+  text-align: center;
 }
 .services h2 {
-  border-bottom: 4px solid #f6f6f6;
+  border-bottom: 4px solid #202124;
 }
 .services-section {
   margin: 20px;
@@ -19,8 +19,14 @@
   width: 350px;
   margin: 5px;
   border-radius: 6px;
-  border-top: 6px solid #4b6cc1;
+  border-top: 6px solid #202124;
   background: #f6f6f6;
+}
+.services h2 {
+  color: #202124 !important;
+}
+.frontend p {
+  color: #202124;
 }
 .backend {
   text-align: center;
@@ -28,18 +34,23 @@
   margin: 5px;
   width: 350px;
   border-radius: 6px;
-  border-top: 6px solid #4b6cc1;
+  border-top: 6px solid #202124;
   background: #f6f6f6;
+}
+.backend p {
+  color: #202124;
 }
 .skills {
   text-align: center;
+  width: 600px;
+  margin: auto;
 }
 .skills-cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 6px;
-  border-top: 6px solid #4b6cc1;
+  border-top: 6px solid #202124;
   background: #f6f6f6;
 }
 
@@ -52,6 +63,9 @@
 @media screen and (max-width: 768px) {
   .services {
     text-align: center;
+  }
+  .skills {
+    width: 290px;
   }
   .skills img {
     width: 60px;

@@ -7,6 +7,9 @@
 .info {
   padding: 30px;
 }
+.info p {
+  color: #202124;
+}
 .tech li {
   display: inline-block;
   padding: 8px 5px;
@@ -33,41 +36,51 @@
   width: 600px;
   height: 400px;
   margin: 20px;
+  border: 1px bold;
+  border-radius: 5px;
 }
 .links {
   font-size: 20px;
   position: relative;
   text-align: center;
 }
-.links i {
-  color: aquamarine;
-  background-color: black;
+.links a {
+  color: #fff;
+  background-color: #313131;
   padding: 10px;
   cursor: pointer;
+  border: 1px bold;
+  border-radius: 5px;
   margin: 10px;
+}
+.links a:hover {
+  background-color: #dbb392;
 }
 .links label {
   font-size: 12px;
   margin: 10px;
 }
 /* Responsive Styling "(min-width: 768px)" */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1016px) {
   .project {
     flex-direction: column;
+    text-align: center;
   }
   .image-links {
     text-align: center;
   }
   .image-links img {
     width: 220px;
+    text-align: center;
     height: 220px;
     margin: auto;
+    margin-bottom: 10px;
   }
   .info {
     text-align: center;
     margin: auto;
   }
-  .image-links i {
+  .image-links a {
     font-size: 12px;
   }
 }

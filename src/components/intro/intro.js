@@ -1,29 +1,53 @@
 import React from "react";
 import "./intro.css";
+import ReactTypingEffect from "react-typing-effect";
+import { Link } from "react-scroll";
+
 const Intro = () => {
   return (
-    <section className="first-section">
+    <div className="first-section">
       <div className="intro-section">
-        <h1>Hey, I'm Hazem.</h1>
-        <h2>
+        <ReactTypingEffect
+          className="Hey"
+          typingDelay="1000"
+          text="Hey, I'm Hazem." //text=["Hello.", "World!"]
+        />
+        <h3>
           Web Developer from Egypt, I design and code beautifully Web
           Applications, and I love what I do.
-        </h2>
-        <button className="first-button">My Projects</button>
+        </h3>
+        <Link
+          activeClass="active"
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          <button className="first-button">My Projects</button>
+        </Link>
       </div>
       <div className="image-section">
         <img
           className="profile-image"
           alt="Profile"
-          src={require("../../static/images/profile.png")}
+          src={require("../../static/images/profile.jpg")}
         ></img>
         <div className="links-section">
-          <i class="fab fa-github-square" title="Github"></i>
-          <i class="fab fa-linkedin" title="Linkedin"></i>
-          <i class="fas fa-portrait" title="Download Resume"></i>
+          <a
+            href="https://github.com/hazem-kamel"
+            class="fab fa-github-square"
+            title="Github"
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/hazem-kamel-84b311172/"
+            class="fab fa-linkedin"
+            title="Linkedin"
+          ></a>
+          <a class="fas fa-portrait" title="Download Resume"></a>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 export default Intro;

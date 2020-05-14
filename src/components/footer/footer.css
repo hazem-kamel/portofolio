@@ -1,9 +1,8 @@
 .Footer {
-  background: #1b242f;
+  background-color: #202124;
   padding: 60px 0 40px 0;
   display: block;
   position: relative;
-  margin-top: 30px;
 }
 .icons-links {
   align-items: center;
@@ -11,12 +10,13 @@
   display: flex;
   justify-content: center;
 }
-.icons-links i {
+.icons-links a {
   margin: 10px;
+  color: #fff;
 }
 .footer-note {
   display: flex;
-  color: #8f9aa7;
+  color: #fff;
   font-size: 10pt;
   margin-top: 30px;
   opacity: 0.6;
@@ -25,15 +25,16 @@
 .slide-up {
   cursor: pointer;
   font-size: 25pt;
-  left: 0;
   line-height: 40pt;
-  color: aquamarine;
+  color: #a7bcc2;
   margin: 0 auto;
   text-align: center;
-  background: beige;
   position: absolute;
-  right: 0;
+  right: 30px;
   top: -35px;
   width: 40px;
   height: 45px;
+}
+.slide-up:hover {
+  color: #dbb392;
 }

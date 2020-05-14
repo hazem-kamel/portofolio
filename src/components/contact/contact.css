@@ -1,7 +1,13 @@
 .contact-section {
   box-sizing: border-box;
   padding: 10px;
-  margin-bottom: 60px;
+  background-color: #202124;
+}
+h2 {
+  color: #a7bcc2;
+}
+p {
+  color: #a7bcc2;
 }
 .form {
   margin: 0 auto;
@@ -15,11 +21,11 @@
   justify-content: center;
 }
 .email {
-  border: 2px solid red;
+  border: 2px solid;
   border-radius: 9px;
   background: #ffffff;
   box-sizing: border-box;
-  color: #fff;
+  color: #202124;
   display: block;
   font-size: 12pt;
   margin-bottom: 3px;
@@ -30,24 +36,24 @@
 .name {
   background: #ffffff;
   box-sizing: border-box;
-  color: rgb(0, 0, 0);
+  color: #202124;
   display: block;
   font-size: 12pt;
   margin-bottom: 3px;
   padding: 10px 15px;
   outline: none;
   width: 100%;
-  border: 2px solid red;
+  border: 2px solid;
   border-radius: 9px;
 }
 .message {
   margin-bottom: 5px;
   min-height: 150px;
   background: #ffffff;
-  border: 2px solid red;
+  border: 2px solid;
   border-radius: 9px;
   box-sizing: border-box;
-  color: #fff;
+  color: #202124;
   display: block;
   font-size: 12pt;
   margin-bottom: 3px;
@@ -57,13 +63,13 @@
 }
 .submit-button {
   background: transparent;
-  color: rgb(111, 0, 255);
+  color: #dbb392;
   float: right;
   font-size: 12pt;
   margin: 5px 0 0 0;
   cursor: pointer;
   outline: 0;
   padding: 10px 30px;
-  border: 2px solid rgb(111, 0, 255);
+  border: 2px solid #dbb392;
   border-radius: 30px;
 }

@@ -1,33 +1,43 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./project.css";
-const projectPage = (props) => {
+import data from "../../static/data/data.json";
+const ProjectPage = (props) => {
+  const newData = data;
+  console.log(newData);
+  const ID = props.match.params;
+  console.log(ID.id);
   return (
     <div className="project">
-      <div className="info">
-        <h4>Movies App</h4>
-        <p>React sdfsdff</p>
-        <div className="tech">
-          <ul>
-            <li>React</li>
-            <li>Redux</li>
-            <li>Node</li>
-            <li>Mongo</li>
-            <li>Redux</li>
-            <li>Redux</li>
-            <li>Redux</li>
-            <li>Redux</li>
-            <li>Redux</li>
-          </ul>
-        </div>
-      </div>
-      <div className="image-links">
-        <img src={require("../../static/images/back5.jpg")}></img>
-        <div className="links">
-          <i>Github Code</i>
-          <i>Live Website</i>
-        </div>
-      </div>
+      {newData.Projects.filter((project) => project.id === ID.id).map(
+        (projectInfo) => {
+          return (
+            <>
+              <div className="info">
+                <h4>{projectInfo.Title}</h4>
+                <p>{projectInfo.Description}</p>
+                <div className="tech">
+                  <ul>
+                    {projectInfo.Skills.map((skill) => {
+                      return <li>{skill}</li>;
+                    })}
+                  </ul>
+                </div>
+              </div>
+              <div className="image-links">
+                <img
+                  alt="imageproject"
+                  src={require(`../../static/images/${projectInfo.Image}`)}
+                ></img>
+                <div className="links">
+                  <a href={projectInfo.code}>Github Code</a>
+                  <a href={projectInfo.site}>Live Website</a>
+                </div>
+              </div>
+            </>
+          );
+        }
+      )}
     </div>
   );
 };
-export default projectPage;
+export default ProjectPage;

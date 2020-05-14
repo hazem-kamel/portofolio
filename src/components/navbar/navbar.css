@@ -1,56 +1,35 @@
 /* General Styling */
-nav {
-  height: 60px;
-  overflow: hidden;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.nav-links {
-  display: flex;
-  list-style: none;
-  width: 50%;
-  height: 100%;
-  justify-content: space-around;
-  align-items: center;
-}
-.nav-links li a {
-  text-decoration: none !important;
-  color: #ababab;
-  font-size: 18px;
+.navbar {
+  background-color: #202124;
+  height: 130px;
 }
 .logo {
   text-decoration: none !important;
   color: inherit;
-  color: #ababab;
+  color: #e4dede;
   font-size: 18px;
   display: flex;
-  float: left;
 }
-
 .logo:hover .square {
   transform: rotate(-180deg);
 }
 .square {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   display: block;
   overflow: visible;
-  border: 3px solid #494c4e;
+  border: 3px solid #e4dede;
   transform: rotate(0deg);
   transition: transform 0.4s ease-in-out;
   flex-shrink: 0;
   position: relative;
-  top: 12px;
-  right: 23px;
+  top: 10px;
+  right: 20px;
 }
 .circle {
   width: 60px;
   height: 60px;
-  border: solid #494c4e 3px;
+  border: solid #e4dede 3px;
   border-radius: 50%;
   position: relative;
   left: 30px;
@@ -58,55 +37,6 @@ nav {
 .logo-text {
   font-weight: 700;
   position: relative;
-  right: 57px;
-  top: 20px;
-}
-#justify {
-  display: none;
-}
-/* Mobile Styling "min-width: 480px" */
-.logo {
-  z-index: 2;
-}
-@media screen and (max-width: 480px) {
-  .nav-links {
-    position: fixed;
-    background-color: rgb(94, 36, 76);
-    width: 100%;
-  }
-}
-/* Responsive Styling "(min-width: 768px)" */
-@media screen and (max-width: 768px) {
-  .nav-links {
-    position: fixed;
-    background-color: rgb(94, 36, 76);
-    height: 200vh;
-    width: 100%;
-    flex-direction: column;
-    margin: 0px;
-    padding: 0px;
-    display: none;
-    justify-content: center;
-  }
-  nav {
-    padding-left: 0px;
-    position: relative;
-  }
-
-  .nav-links a {
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #f1f1f1;
-  }
-  #justify {
-    display: initial;
-    position: absolute;
-    font-size: 30px;
-    cursor: pointer;
-    right: 5%;
-    top: 50%;
-    transform: translate(-5%, -50%);
-    color: yellowgreen;
-    z-index: 2;
-  }
+  right: 53px;
+  top: 15px;
 }
