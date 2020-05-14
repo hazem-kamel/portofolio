@@ -1,6 +1,7 @@
 .project {
   display: flex;
   padding: 30px;
+  background-color: white;
   justify-content: center;
   margin-bottom: 60px;
 }
