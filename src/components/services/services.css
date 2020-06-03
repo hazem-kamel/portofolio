@@ -1,6 +1,7 @@
 .services {
   padding: 30px;
   text-align: center;
+  background-color: white;
 }
 .services h2 {
   border-bottom: 4px solid #202124;

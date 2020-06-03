@@ -3,27 +3,43 @@ import "./contact.css";
 import * as emailjs from "emailjs-com";
 import { useForm } from "react-hook-form";
 import { Element } from "react-scroll";
+import {
+  NotificationContainer,
+  NotificationManager,
+} from "react-notifications";
 
 const Contact = () => {
   const { register, handleSubmit, errors } = useForm();
+  const createNotification = (type) => {
+    return () => {
+      NotificationManager.success(
+        "Your message sent successfully",
+        "Message Recieved",
+        3000
+      );
+    };
+  };
   const onSubmit = (data) => {
     let templateParams = {
       name: data.name,
       email: data.email,
       message: data.message,
     };
-    emailjs.send(
-      "gmail",
-      "template_t6npct8u",
-      templateParams,
-      "user_TC2FlEFLqJjVxtD0jMogs"
-    );
+    emailjs
+      .send(
+        "gmail",
+        "template_t6npct8u",
+        templateParams,
+        "user_TC2FlEFLqJjVxtD0jMogs"
+      )
+      .then(document.getElementById("form").reset())
+      .then(createNotification());
   };
 
   return (
     <Element id="contact" name="contact">
       <div className="contact-section">
-        <form className="form" onSubmit={handleSubmit(onSubmit)}>
+        <form className="form" id="form" onSubmit={handleSubmit(onSubmit)}>
           <h2>Contact</h2>
           <p>Have a question or want to work together?</p>
           <input
@@ -48,8 +64,9 @@ const Contact = () => {
           )}
           <textarea
             placeholder="Your Message"
-            className="message"
+            className="message-text"
             rows="3"
+            id="message-text"
             name="message"
             ref={register({ required: true })}
           ></textarea>
@@ -58,6 +75,7 @@ const Contact = () => {
           )}
           <button className="submit-button">Submit</button>
         </form>
+        <NotificationContainer />
       </div>
     </Element>
   );

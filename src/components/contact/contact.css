@@ -46,7 +46,7 @@ p {
   border: 2px solid;
   border-radius: 9px;
 }
-.message {
+.message-text {
   margin-bottom: 5px;
   min-height: 150px;
   background: #ffffff;
