@@ -21,7 +21,7 @@ const Footer = () => {
           class="fab fa-linkedin"
           title="Linkedin"
         ></a>
-        <a href="/" class="fas fa-portrait" title="Download Resume"></a>
+        <a href="/resume" class="fas fa-portrait" title="Download Resume"></a>
       </div>
       <div className="footer-note">
         HAZEM KAMEL

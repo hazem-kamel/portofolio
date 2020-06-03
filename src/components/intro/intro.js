@@ -27,25 +27,18 @@ const Intro = () => {
           <button className="first-button">My Projects</button>
         </Link>
       </div>
-      <div className="image-section">
-        <img
-          className="profile-image"
-          alt="Profile"
-          src={require("../../static/images/profile.jpg")}
-        ></img>
-        <div className="links-section">
-          <a
-            href="https://github.com/hazem-kamel"
-            class="fab fa-github-square"
-            title="Github"
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/hazem-kamel-84b311172/"
-            class="fab fa-linkedin"
-            title="Linkedin"
-          ></a>
-          <a class="fas fa-portrait" title="Download Resume"></a>
-        </div>
+      <div className="links-section">
+        <a
+          href="https://github.com/hazem-kamel"
+          class="fab fa-github-square"
+          title="Github"
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/hazem-kamel-84b311172/"
+          class="fab fa-linkedin"
+          title="Linkedin"
+        ></a>
+        <a class="fas fa-portrait" title="Download Resume" href="/Resume"></a>
       </div>
     </div>
   );
