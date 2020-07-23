@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import "./contact.css";
 import * as emailjs from "emailjs-com";
 import { useForm } from "react-hook-form";
@@ -10,7 +10,6 @@ import {
 
 const Contact = () => {
   const { register, handleSubmit, errors } = useForm();
-  const [visitorData, updateVisitorData] = useState();
   useEffect(() => {
     fetch(
       "https://geolocation-db.com/json/697de680-a737-11ea-9820-af05f4014d91",

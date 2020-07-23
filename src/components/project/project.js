@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./project.css";
 import data from "../../static/data/data.json";
 const ProjectPage = (props) => {
