@@ -73,7 +73,7 @@
     },
     {
       "id": "6",
-      "Title": "Portofolio",
+      "Title": "Portfolio",
       "Description": "Frontend responsive portofolio using React Hooks , HTML & CSS , react-pdf , react-router-dom.",
       "Image": "portofolio.jpg",
       "Skills": ["React Hooks", "HTML", "CSS"],

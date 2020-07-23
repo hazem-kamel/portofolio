@@ -3,7 +3,6 @@ import "./projects.css";
 import { Link } from "react-router-dom";
 import data from "../../static/data/data.json";
 import { Element } from "react-scroll";
-import { AnimatedOnScroll } from "react-animated-css-onscroll";
 
 const Projects = () => {
   const newData = data;

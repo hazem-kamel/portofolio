@@ -10,7 +10,7 @@ const Intro = () => {
         <ReactTypingEffect
           className="Hey"
           typingDelay="1000"
-          text="Hey, I'm Hazem." //text=["Hello.", "World!"]
+          text="Hey, I'm Hazem."
         />
         <h3>
           Web Developer from Egypt, I design and code beautifully Web
@@ -38,7 +38,11 @@ const Intro = () => {
           class="fab fa-linkedin"
           title="Linkedin"
         ></a>
-        <a class="fas fa-portrait" title="Download Resume" href="/Resume"></a>
+        <a
+          class="fas fa-portrait"
+          title="Download Resume"
+          href="https://drive.google.com/file/d/1Pnt4GmbEedVAuUHhXddcEP3IbwkjewOi/view?usp=sharing"
+        ></a>
       </div>
     </div>
   );

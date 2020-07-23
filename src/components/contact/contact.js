@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./contact.css";
 import * as emailjs from "emailjs-com";
 import { useForm } from "react-hook-form";
@@ -10,6 +10,24 @@ import {
 
 const Contact = () => {
   const { register, handleSubmit, errors } = useForm();
+  const [visitorData, updateVisitorData] = useState();
+  useEffect(() => {
+    fetch(
+      "https://geolocation-db.com/json/697de680-a737-11ea-9820-af05f4014d91",
+      { method: "GET", headers: {} }
+    )
+      .then((res) => {
+        return res.json();
+      })
+      .then((ip) => sendingData(ip));
+  }, []);
+  const sendingData = (data) => {
+    let details = {
+      country: data.country_name,
+      ip: data.IPv4,
+    };
+    emailjs.send("gmail", "ip", details, "user_TC2FlEFLqJjVxtD0jMogs");
+  };
   const createNotification = (type) => {
     return () => {
       NotificationManager.success(
