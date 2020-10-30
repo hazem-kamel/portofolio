@@ -22,7 +22,7 @@
   cursor: pointer;
 }
 .projects-cards img:hover {
-  opacity: 0.4;
+  opacity: 0.2;
   background-color: #dbb392(252, 252, 252);
 }
 .project-1 {
@@ -48,10 +48,12 @@
 .project-1 .Learn {
   height: 45px;
   border: 1px black bold;
-  background-color: #a7bcc2;
+  background-color: white !important;
   border-radius: 15px;
   width: 120px;
   position: absolute;
+  color:#72adbd;
+  border-color:#72adbd;
   margin: auto;
   top: 30px;
   left: 0;
@@ -89,8 +91,9 @@
   }
   .Learn {
     height: 30px;
-    border: 1px black bold;
-    background-color: #a7bcc2;
+    border: 1px #72adbd bold;
+    background-color: white !important;
+    color:#72adbd;
     border-radius: 15px;
     padding: 5px;
     width: 60px;

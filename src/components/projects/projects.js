@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <Element id="projects" name="projects">
       <div className="projects-sections">
-        <h2>Projects</h2>
+        <h2 style={{padding:"5px"}}>Projects</h2>
         <div className="projects-cards">
           <div className="cards">
             {newData.Projects.map((project, key) => {
@@ -19,12 +19,11 @@ const Projects = () => {
                     alt="Project-1"
                     src={require(`../../static/images/${project.Image}`)}
                   ></img>
-                  <p className="Title">{project.Title}</p>
                   <Link to={"/project/" + project.id}>
                     <button className="Learn">Learn More</button>
                   </Link>
                 </div>
-              );
+              )
             })}
           </div>
         </div>
