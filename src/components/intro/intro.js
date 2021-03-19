@@ -41,7 +41,7 @@ const Intro = () => {
         <a
           class="fas fa-portrait"
           title="Download Resume"
-          href="https://drive.google.com/file/d/16_eN6NPckHw77X4vAX7_qHVk6OcxdFX3/view?usp=sharing"
+          href="https://drive.google.com/file/d/1idA2DI_S91YH2MKI45iomEcHi_YrxRoQ/view?usp=sharing"
         ></a>
       </div>
     </div>
